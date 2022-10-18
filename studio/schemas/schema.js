@@ -1,6 +1,11 @@
 import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
+// My components
+import blockContent from './components/blockContent'
+import post from './components/post'
+import author from './components/author'
+
 // Document types
 import page from './documents/page'
 import product from './documents/shopify-product'
@@ -69,6 +74,9 @@ export default createSchema({
   types: schemaTypes.concat([
     /* ----------------- */
     /* 1: Document types */
+    blockContent,
+    post,
+    author,
     page,
     product,
     productVariant,
